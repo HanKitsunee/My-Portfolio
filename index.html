@@ -4,255 +4,426 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style/styles.css" />
 
-    <!-- Library AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Icon Web -->
-    <link rel="icon" href="img/iconweb.jpeg" />
+    <!-- LIbrary -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="asset/Icon.png" />
   </head>
   <body>
-    <!-- Navbar -->
-    <header>
-      <a href="Index.html" class="logo">My Portfolio</a>
+    <!-- Header Start -->
+    <header class="header">
+      <a href="#home" class="logo">Han.Kitsu</a>
+
+      <div class="fas fa-bars"></div>
 
       <nav class="navbar">
-        <a href="#home-page" id="home">Home</a>
-        <a href="#about-page" id="about">About</a>
-        <a href="#service-page" id="service">Service</a>
-        <a href="#skill-page" id="skill">Skill</a>
-        <a href="#portfolio-page" id="portfolio">Portfolio</a>
-        <a href="#contact-page" id="contact">Contact</a>
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#service">service</a></li>
+          <li><a href="#skill">skill</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+        </ul>
       </nav>
+
+      <div class="btn-contact-me">
+        <a href="#contact">Let's Talk</a>
+      </div>
     </header>
+    <!-- Header End -->
 
-    <!-- Home PageS -->
-    <section class="home" id="home-page">
-      <div class="home-text">
-        <div data-aos="fade-left"><p>Hello, My Name Is</p></div>
-        <h1 data-aos="fade-right">Muhammad Farhan Fauzi Akbar</h1>
-        <div data-aos="fade-left">
-          <p>
-            I am a gamer, web developer, otaku, and designer of moderate
-            ability, who is always eager to explore and learn new things in each
-            of these fields.
-          </p>
-        </div>
-        <div class="btn-box" data-aos="zoom-in">
-          <a href="#about-page">KNOW MORE</a>
-        </div>
+    <!-- Home Start -->
+    <sectiom id="home" class="home">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="video/Home-Bg.mp4" type="video/mp4" />
+      </video>
+
+      <h1 class="welcome">Hi, welcome To My Portfolio</h1>
+      <h4 class="explan">
+        This is my second portfolio, <br />I learned a lot of things to make
+        this second portfolio, <br />so please take a look
+      </h4>
+      <a href="#about"><button>Let's check it out</button></a>
+    </sectiom>
+    <!-- Home End -->
+
+    <!-- About Start -->
+    <section class="about" id="about">
+      <div class="about-left">
+        <img src="img/profile.jpeg" alt="My Profile" />
       </div>
 
-      <div class="home-icon">
-        <img src="img/icon.png" alt="icon" />
-        <img class="efek" src="img/efekicon.png" alt="efek-icon" />
-      </div>
-    </section>
+      <div class="about-right">
+        <h1 class="helo">Hi There...</h1>
+        <h1>I'm Muhammad Farhan Fauzi Akbar</h1>
 
-    <!-- About Page -->
-    <section class="about" id="about-page">
-      <div class="about-left" data-aos="zoom-in-right">
-        <img src="img/Main Left.png" alt="icon-about" />
-      </div>
-
-      <div class="about-right" data-aos="fade-left">
-        <p>- ABOUT ME -</p>
-        <br />
-        <h2>Who Am I</h2>
-        <br />
+        <h4>A journey as a web developer</h4>
         <p>
-          My name is muhammad farhan fauzi akbar, I am a web programmer and
-          designer, I graduated from SMK Fajar Utama Department of SIJA (Network
-          Information Systems and Applications), I also have skills in several
-          fields whether it's soft skills or hard skills.
+          I started my journey as a web developer with a passion for creating
+          attractive and well-functioning websites. From understanding the
+          basics of HTML to mastering it, I continue to learn and develop my
+          skills.
         </p>
-        <br />
 
-        <p><b>Name : </b>Muhammad Farhan Fauzi Akbar</p>
-        <br />
-        <p><b>Age : </b>18</p>
-        <br />
-        <p><b>Gmail : </b>yukinoaoi764@gmail.com</p>
-        <br />
+        <h4>A journey as a content creator</h4>
+        <p>
+          As a content creator, I explore various forms of content, including
+          writing articles, recording videos, and speaking on podcasts about web
+          development, UI/UX design, and tech trends. My work aims to share
+          knowledge with others.
+        </p>
 
-        <div class="btn-box-2" data-aos="zoom-in">
-          <a href="https://drive.google.com/file/d/1sD08LN4-PUSGn0wp3QSgzAoB4WHIeAuH/view?usp=drive_link" target="_blank">DOWNLOAD CV</a>
+        <h4>A journey as an otaku</h4>
+        <p>
+          I'm an otaku who loves Japanese culture, enjoying anime, manga, and
+          more. My love for technology and pop culture helps me create unique
+          digital experiences.
+        </p>
+
+        <div class="btn-about">
+          <a href="#portfolio" class="btn-1">My Project</a>
+          <a
+            href="https://drive.google.com/file/d/1Kr6Qhb0IzWwe-Dx5MSBkfaAZDPy3JLX9/view?usp=drive_link"
+            target="_blank"
+            class="btn-1 btn-cv"
+            >Download CV</a
+          >
         </div>
       </div>
     </section>
+    <!-- About End -->
 
-    <!-- Service Page -->
-    <section class="service" id="service-page">
-      <div class="service-text">
-        <p>- MY SERVICE -</p>
-        <br />
-        <h2>What Can I Do</h2>
-        <br />
-      </div>
+    <!-- Service Start -->
+    <div class="container-service">
+      <div class="service" id="service">
+        <h1>Service</h1>
+        <p>Our services cover various aspects</p>
 
-      <div class="service-img">
-        <img src="img/CARD.png" alt="CARD-SKILL" />
-      </div>
+        <div class="cards">
+          <div class="card">
+            <i class="fa-solid fa-code"></i>
+            <div class="card-content">
+              <h3>Web Development</h3>
+              <p>
+                We create efficient and engaging digital solutions through web
+                development. From interface design to functionality, we ensure
+                your website runs smoothly and provides the best user
+                experience.
+              </p>
+            </div>
+          </div>
 
-      <div class="skill-text" id="skill-page">
-        <p>- MY SERVICE -</p>
-        <br />
-        <h2>What Can I Do</h2>
-        <br />
-      </div>
+          <div class="card">
+            <i class="fa-solid fa-laptop"></i>
+            <div class="card-content">
+              <h3>Graphic Design</h3>
+              <p>
+                We create engaging and effective visuals through graphic design.
+                From logos to marketing materials, we ensure your message is
+                delivered in a unique and professional style.
+              </p>
+            </div>
+          </div>
 
-      <!-- Skil Page -->
-      <div class="skill-img">
-        <img src="img/BAR.png" alt="CARD-SKILL" />
+          <div class="card">
+            <i class="fa-solid fa-photo-film"></i>
+            <div class="card-content">
+              <h3>Content Creator</h3>
+              <p>
+                We create creative content ranging from text, images, to videos
+                that are tailored to the audience. From TikTok to Instagram, we
+                ensure your message is received in a unique and professional
+                style.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Skill Start -->
+    <section class="skill" id="skill">
+      <section class="skill-text">
+        <h1>My Skill</h1>
+        <p>Some of our skills</p>
+      </section>
+
+      <section class="skill-warp">
+        <div class="SH-text">
+          <h1>Hard Skill</h1>
+
+          <div class="hard-bars">
+            <div class="bar">
+              <i class="bx bxl-html5"></i>
+              <div class="info"><span>Html</span></div>
+              <div class="prog-line html">
+                <span></span>
+              </div>
+            </div>
+
+            <div class="bar">
+              <i class="bx bxl-css3"></i>
+              <div class="info"><span>Css</span></div>
+              <div class="prog-line css">
+                <span></span>
+              </div>
+            </div>
+
+            <div class="bar">
+              <i class="bx bxl-wordpress"></i>
+              <div class="info"><span>WordPress</span></div>
+              <div class="prog-line wordpress">
+                <span></span>
+              </div>
+            </div>
+
+            <div class="bar">
+              <i class="bx bxl-figma"></i>
+              <div class="info"><span>Figma</span></div>
+              <div class="prog-line figma">
+                <span></span>
+              </div>
+            </div>
+
+            <div class="bar">
+              <i class="bx bxl-microsoft"></i>
+              <div class="info"><span>Micorsoft Office</span></div>
+              <div class="prog-line microsoft">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="SH-text">
+          <h1>Soft Skill</h1>
+
+          <div class="radial-bars">
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="prog-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">90%</div>
+              <div class="percen-text">Communications</div>
+            </div>
+
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="prog-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">80%</div>
+              <div class="percen-text">Problem Solving</div>
+            </div>
+
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="prog-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">70%</div>
+              <div class="percen-text">Leadership</div>
+            </div>
+
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="prog-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">80%</div>
+              <div class="percen-text">Teamwork</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
+    <!-- Skill End -->
 
-    <!-- Portfolio Page -->
-    <section class="portfolio-page" id="portfolio-page">
+    <!-- Portfolio Start -->
+    <div class="portfolio" id="portfolio">
       <div class="port-text">
-        <p>- MY PORTFOLIO -</p>
-        <br />
-        <h2>What Projects Have Been Done</h2>
-        <br />
+        <h1>My Project</h1>
+        <p>These are all projects that have been completed.</p>
       </div>
 
-      <div class="portfolio">
-        <div
-          class="slide"
-          style="
-            background-image: url('img/portfolio/Logo\ poster\ BRD-01.jpg');
-          "
-        >
-          <h3>Project 1</h3>
+      <div class="container-img">
+        <div class="port-box">
+          <a href="img/Desain/DSN-1.jpg" target="_blank"><img src="img/Desain/DSN-1.jpg" alt="Desain-1" /></a>
         </div>
-
-        <div
-          class="slide"
-          style="background-image: url('img/portfolio/Poster\ b.indo.jpg')"
-        >
-          <h3>Project 2</h3>
+        <div class="port-box">
+          <a href="img/Desain/DSN-2.jpg" target="_blank"><img src="img/Desain/DSN-2.jpg" alt="Desain-2" /></a>
         </div>
-
-        <div
-          class="slide"
-          style="background-image: url('img/portfolio/Desain\ Figma.png')"
-        >
-          <h3>Project 3</h3>
+        <div class="port-box">
+          <a href="img/Desain/DSN-3.png" target="_blank"><img src="img/Desain/DSN-3.png" alt="Desain-3" /></a>
         </div>
-
-        <div
-          class="slide"
-          style="background-image: url('img/portfolio/poster\ pai.jpg')"
-        >
-          <h3>Project 4</h3>
+        <div class="port-box">
+          <a href="img/Desain/DSN-4.jpg" target="_blank"><img src="img/Desain/DSN-4.jpg" alt="Desain-4" /></a>
         </div>
-
-        <div
-          class="slide"
-          style="background-image: url('img/portfolio/desain\ figma\ 2.png')"
-        >
-          <h3>Project 5</h3>
+        <div class="port-box">
+          <a href="img/Desain/DSN-5.jpg" target="_blank"><img src="img/Desain/DSN-5.jpg" alt="Desain-5" /></a>
+        </div>
+        <div class="port-box">
+          <a href="img/Desain/DSN-6.jpg" target="_blank"><img src="img/Desain/DSN-6.jpg" alt="Desain-6" /></a>
+        </div>
+        <div class="port-box">
+          <a href="img/Figma/FIG-1.png" target="_blank"><img src="img/Figma/FIG-1.png" alt="Figma-1" /></a>
+        </div>
+        <div class="port-box">
+          <a href="img/Figma/FIG-2.png" target="_blank"><img src="img/Figma/FIG-2.png" alt="Figma-2" /></a>
+        </div>
+        <div class="port-box">
+          <a href="img/Figma/FIG-3.png" target="_blank"><img src="img/Figma/FIG-3.png" alt="Figma-3" /></a>
+        </div>
+        <div class="port-box">
+          <a href="img/Document/DOC-1.png" target="_blank"><img src="img/Document/DOC-1.png" alt="Dockument-1" /></a>
+        </div>
+        <div class="port-box">
+          <a href="img/Document/DOC-2.png" target="_blank"><img src="img/Document/DOC-2.png" alt="Dokcument-2" /></a>
+        </div>
+        <div class="port-box">
+          <a href="img/Document/DOC-3.png" target="_blank"><img src="img/Document/DOC-3.png" alt="Dokument-3" /></a>
         </div>
       </div>
-    </section>
+    </div>
+    <!-- Portfolio End -->
 
-    <!-- Contact Page -->
+    <!-- Contact Start -->
+    <div class="contact" id="contact">
+      <div class="contact-box">
+        <div class="contact-left">
+          <img src="img/contact.jpeg" alt="Profile-Contact" />
+        </div>
 
-    <section class="contact" id="contact-page">
-      <div class="contact-text">
-        <h2 data-aos="fade-down">- CONTACT -</h2>
-        <p data-aos="zoom-in">
-          If you have any suggestions, messages, or impressions, please fill out
-          the form.
+        <div class="contact-right">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="88626233-d8df-4851-971a-7ab95293bd5c"
+            />
+            <h1>Get in Touch With Me</h1>
+            <input
+              class="field"
+              type="text"
+              name="name"
+              required
+              placeholder="Your Name"
+            />
+            <input
+              class="field"
+              type="tel"
+              name="phone"
+              required
+              placeholder="Your Phone"
+            />
+            <input
+              class="field"
+              type="email"
+              name="email"
+              required
+              placeholder="Your Gmail"
+            />
+            <textarea
+              class="field"
+              name="message"
+              required
+              placeholder="Message"
+            ></textarea>
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            />
+            <button class="btn-contact" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="foot-bg">
+      <footer class="footer">
+        <div class="row-foot">
+          <div class="col-foot">
+            <a href="#home" class="logo-foot">Han.Kitsu</a>
+            <br /><br />
+            <p>
+              I feel lucky that this portfolio provides a lot of experience and
+              knowledge. Thanks to all who have seen it. This is the second
+              version of my portfolio website.
+            </p>
+          </div>
+          <div class="col-foot">
+            <h3>
+              Addresss
+              <div class="underline"><span></span></div>
+            </h3>
+            <p>Bogor</p>
+            <p>West Java, Indonesia</p>
+            <p class="email-id">han.kitsu.0517@gmail.com</p>
+            <h4>+62 - 85772585149</h4>
+          </div>
+          <div class="col-foot">
+            <h3>
+              Links
+              <div class="underline"><span></span></div>
+            </h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#skill">Skill</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-foot">
+            <h3>
+              Social Media
+              <div class="underline"><span></span></div>
+            </h3>
+            <div class="social-icon">
+              <a href="https://www.tiktok.com/@han.kitsu" target="_blank"
+                ><i class="bx bxl-tiktok"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/simplyhankitsu/"
+                target="_blank"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UC7tr14W54VbUr5AVpcMdoSQ"
+                target="_blank"
+                ><i class="bx bxl-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">
+          Copyright © 2024 by Farhan, All Rights Reserved.
         </p>
-        <div data-aos="zoom-in">
-          <h2>Phone</h2>
-          <p>+6285772595149</p>
-          <h2>Gmail</h2>
-          <p>yukinoaoi764@gmail.com</p>
-        </div>
-      </div>
-      <div class="form" data-aos="zoom-out">
-        <form action="https://api.web3forms.com/submit" method="POST">
-          <input
-            type="hidden"
-            name="access_key"
-            value="88626233-d8df-4851-971a-7ab95293bd5c"
-          />
-          <h3>Contact Form</h3>
-          <input type="text" name="name" required placeholder="Your Name" />
-          <input type="tel" name="phone" required placeholder="Your Phone" />
-          <input type="email" name="email" required placeholder="Your Gmail" />
-          <textarea name="message" required placeholder="Message"></textarea>
-          <input
-            type="checkbox"
-            name="botcheck"
-            class="hidden"
-            style="display: none"
-          />
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
+      </footer>
+    </div>
+    <!-- Footer End -->
 
-    <!-- Footer -->
-    <footer>
-      <br>
-      <div class="footer-container" data-aos="fade-up">
-        <div class="footer-logo">
-          <!-- <h1>LOGO</h1> -->
-          <h1>My Portfolio</h1>
-        </div>
-        <div class="footer-links">
-          <h3>Quick Link</h3>
-          <a href="#home-page" id="home">Home</a>
-          <a href="#about-page" id="about">About Me</a>
-          <a href="#service-page" id="service">Service</a>
-          <a href="#skill-page" id="skill">Skill</a>
-          <a href="#portfolio-page" id="portfolio">Portfolio</a>
-          <a href="#contact-page" id="contact">Contact</a>
-        </div>
-        <div class="footer-contact">
-          <h3>Contact</h3>
-          <p>yukinoaoi764@gmail.com</p>
-          <p>+625772595149</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>Copyright © 2024 by Farhan, All Rights Reserved.</p>
-      </div>
-    </footer>
-
-    <!-- Script Img Slide -->
-    <script>
-      activeslideimg();
-
-      function activeslideimg(activeSlide = 2) {
-        const slides = document.querySelectorAll(".slide");
-
-        slides[activeSlide].classList.add("active");
-
-        for (const slide of slides) {
-          slide.addEventListener("click", () => {
-            clearActiveClasses();
-
-            slide.classList.add("active");
-          });
-        }
-
-        function clearActiveClasses() {
-          slides.forEach((slide) => {
-            slide.classList.remove("active");
-          });
-        }
-      }
-    </script>
-
-    <!-- Script Library AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <!-- Jquery Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Script Js -->
+    <script src="js/main.js"></script>
   </body>
 </html>
